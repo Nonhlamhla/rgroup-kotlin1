@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/header_bg"
+                    android:layout_centerInParent="true"/>
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/header_app_setting"
+                    android:textColor="@color/whiteColor"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_12sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"/>
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:orientation="horizontal">
+                        <com.rechargeapp.customview.CustomTextViewButton
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/notification"
+                            android:textColor="@color/whiteHintColor"
+                            android:textSize="@dimen/text_18sp" />
+                        <ToggleButton
+                            android:id="@+id/switchEdgeOpt"
+                            android:layout_width="@dimen/toggle_width"
+                            android:layout_height="@dimen/toggle_height"
+                            android:background="@drawable/toggle_button"
+                            android:checked="true"
+                            android:layout_gravity=""
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color"/>
+
+                    <LinearLayout
+                        android:id="@+id/layHelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:background="@color/notification_back_color">
+                        <com.rechargeapp.customview.CustomTextViewButton
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/help"
+                            android:textColor="@color/whiteHintColor"
+                            android:textSize="@dimen/text_18sp"/>
+                        <ImageView
+                            android:id="@+id/help_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:src="@mipmap/droup_down_arrow_open"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_color"/>
+
+                    <LinearLayout
+                        android:id="@+id/lay_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <com.rechargeapp.customview.CustomTextView
+                            android:id="@+id/help_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/static_content_msg"
+                            android:textColor="@color/whiteHintColor"
+                            android:textSize="@dimen/text_13sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layStaticContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:background="@color/notification_back_color">
+                        <com.rechargeapp.customview.CustomTextViewButton
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/static_content"
+                            android:textColor="@color/whiteHintColor"
+                            android:textSize="@dimen/text_18sp"/>
+                        <ImageView
+                            android:id="@+id/static_content_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/droup_down_arrow_open"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_static_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:background="@color/notification_back_color"
+                        android:orientation="vertical">
+
+                        <com.rechargeapp.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/static_content_msg"
+                            android:textColor="@color/whiteHintColor"
+                            android:textSize="@dimen/text_13sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/botm_logo"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <include
+                    android:id="@+id/llFooter"
+                    layout="@layout/layout_main_footer" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
+

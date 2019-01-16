@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/back_ground_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/header_bg"
+                android:layout_centerInParent="true"/>
+
+            <com.rechargeapp.customview.CustomTextView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/airtime"
+                android:textColor="@color/whiteColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="@dimen/text_12sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="120dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_last_deposite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rechargeapp.customview.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="@string/last_deposit"/>
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="9/26/2018"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.rechargeapp.customview.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="@string/from"/>
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:id="@+id/from_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/box_round"
+                    android:textSize="@dimen/_13sdp"
+                    android:hint="@string/select_date_from"
+                    android:textColorHint="@color/whiteColor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:id="@+id/from_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/whiteColor"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/box_round"
+                        android:textSize="@dimen/_13sdp"
+                        android:hint="@string/select_time_from"
+                        android:textColorHint="@color/whiteColor"/>
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/whiteColor"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/box_round"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="invisible"
+                        android:text="9/26/2018"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.rechargeapp.customview.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="@string/to"/>
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:id="@+id/to_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/box_round"
+                    android:textSize="@dimen/_13sdp"
+                    android:hint="@string/select_date_to"
+                    android:textColorHint="@color/whiteColor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:id="@+id/to_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/whiteColor"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/box_round"
+                        android:textSize="@dimen/_13sdp"
+                        android:hint="@string/select_time_to"
+                        android:textColorHint="@color/whiteColor"/>
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/whiteColor"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/box_round"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="invisible"
+                        android:text="9/26/2018"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:orientation="vertical"
+                android:background="@drawable/box_round">
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:id="@+id/get_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/whiteColor"
+                    android:text="@string/get_report"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/_14sdp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/notification_back_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rechargeapp.customview.CustomTextView
+                android:id="@+id/notification_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/static_content"
+                android:textColor="@color/whiteHintColor"
+                android:textSize="@dimen/text_16sp"/>
+
+            <com.rechargeapp.customview.CustomTextView
+                android:id="@+id/notitfication_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 September, 6:34 pm"
+                android:textColor="@color/whiteHintColor"
+                android:textSize="@dimen/text_10sp"/>
+        </LinearLayout>
+        <com.rechargeapp.customview.CustomTextView
+            android:id="@+id/notification_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Static content is part of every website. In a portal site, static content can be rendered as static page or it can be added to specific content areas on a page."
+            android:textColor="@color/whiteHintColor"
+            android:textSize="@dimen/text_13sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+</LinearLayout>

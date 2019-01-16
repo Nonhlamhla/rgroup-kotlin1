@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ECF0EF</color>
+    <color name="transparentColor">#26ffffff</color>
+    <color name="boxTransparentColor">#59ffffff</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="whiteHintColor">#ECF0EF</color>
+    <color name="transparentBlue">#800A3FCD</color>
+    <color name="darkBlue">#093A7F</color>
+    <color name="blue">#03265C</color>
+    <color name="blueLine">#1882D3</color>
+    <color name="headerBlue">#184BAD</color>
+    <color name="custom_dialog">#99000000</color>
+    <color name="lotto_top">#6785AC</color>
+    <color name="lotto_bottom">#153984</color>
+    <color name="select_ball_top">#00162F</color>
+    <color name="select_ball_bottom">#CC19F6FE</color>
+    <color name="black">#000000</color>
+    <color name="loyalty_view_color">#4d4d4d</color>
+    <color name="view_color">#688ec5</color>
+    <color name="notification_back_color">#66003090</color>
+    <color name="box_background_color">#66698d</color>
+    <color name="yellow_color">#feca0b</color>
+    <color name="button_send_color">#1E2E60</color>
+    <color name="red_color">#EC1F27</color>
+    <color name="orange_color">#F16E23</color>
+    <color name="light_blue_color">#25ADE3</color>
+    <color name="line">#19ffffff</color>
+    <color name="white1">#33ffffff</color>
+    <color name="gray1">#dedede</color>
+    <color name="back_ground_color">#1F3266</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparentBlue">
+
+    <com.rechargeapp.customview.CustomTextView
+        android:id="@+id/spinnerTargetdrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/text_16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+</LinearLayout>

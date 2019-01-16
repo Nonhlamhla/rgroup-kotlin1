@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground_color"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/header_bg" />
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="@string/header_rica"
+                        android:textAllCaps="true"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/text_12sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/network_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_round" />
+
+                    <com.rechargeapp.customview.CustomEditText
+                        android:id="@+id/last_digits_sim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/et_round"
+                        android:hint="@string/last_digits"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/whiteHintColor"
+                        android:textColorHint="@color/whiteHintColor"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <com.rechargeapp.customview.CustomEditText
+                        android:id="@+id/full_sim_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/et_round"
+                        android:hint="@string/full_number"
+                        android:inputType="number"
+                        android:maxLength="14"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/whiteHintColor"
+                        android:textColorHint="@color/whiteHintColor"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/sim_register_option_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioSouthAfrican"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".50"
+                            android:button="@drawable/radio_button"
+                            android:checked="true"
+                            android:text="@string/south_african_bank"
+                            android:textColor="@color/whiteHintColor"
+                            android:textSize="@dimen/text_10sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioPassport"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".50"
+                            android:button="@drawable/radio_button"
+                            android:text="@string/passport"
+                            android:textColor="@color/whiteHintColor"
+                            android:textSize="@dimen/text_10sp" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/layAfricanIDBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.rechargeapp.customview.CustomEditText
+                            android:id="@+id/african_id_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/et_round"
+                            android:hint="@string/african_number"
+                            android:inputType="number"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/whiteHintColor"
+                            android:textColorHint="@color/whiteHintColor"
+                            android:textSize="@dimen/text_16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPassport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Spinner
+                            android:id="@+id/country"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/spinner_round" />
+
+                        <com.rechargeapp.customview.CustomEditText
+                            android:id="@+id/passport_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/et_round"
+                            android:hint="@string/passport_number"
+                            android:inputType="number"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/whiteHintColor"
+                            android:textColorHint="@color/whiteHintColor"
+                            android:textSize="@dimen/text_16sp" />
+                    </LinearLayout>
+
+                    <com.rechargeapp.customview.CustomEditText
+                        android:id="@+id/first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/et_round"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' "
+                        android:hint="@string/first_name"
+                        android:inputType="textCapSentences"
+                        android:maxLength="20"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/whiteHintColor"
+                        android:textColorHint="@color/whiteHintColor"
+                        android:textSize="@dimen/text_16sp" />
+
+
+                <com.rechargeapp.customview.CustomEditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_round"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' "
+                    android:hint="@string/last_name"
+                    android:inputType="textCapSentences"
+                    android:maxLength="20"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/whiteHintColor"
+                    android:textColorHint="@color/whiteHintColor"
+                    android:textSize="@dimen/text_16sp" />
+
+                <com.rechargeapp.customview.CustomEditText
+                    android:id="@+id/street_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_round"
+                    android:hint="@string/street_address"
+                    android:inputType="textCapSentences"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/whiteHintColor"
+                    android:textColorHint="@color/whiteHintColor"
+                    android:textSize="@dimen/text_16sp" />
+
+                <com.rechargeapp.customview.CustomEditText
+                    android:id="@+id/town_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_round"
+                    android:hint="@string/town_city"
+                    android:inputType="textCapSentences"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/whiteHintColor"
+                    android:textColorHint="@color/whiteHintColor"
+                    android:textSize="@dimen/text_16sp" />
+
+                <com.rechargeapp.customview.CustomEditText
+                    android:id="@+id/postal_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_round"
+                    android:hint="@string/postal_code"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/whiteHintColor"
+                    android:textColorHint="@color/whiteHintColor"
+                    android:textSize="@dimen/text_16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <com.rechargeapp.customview.CustomTextViewButton
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/box_round"
+            android:paddingBottom="10dp"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:paddingTop="10dp"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/button_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/botm_logo" />
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/llFooter"
+                layout="@layout/layout_main_footer" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

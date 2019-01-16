@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/back_ground_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/login_logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+
+                <com.rechargeapp.customview.CustomEditText
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_round"
+                    android:hint="@string/cell_no"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:drawableEnd="@mipmap/call_icon"
+                    android:textColor="@color/whiteHintColor"
+                    android:textColorHint="@color/whiteHintColor"
+                    android:textSize="@dimen/text_16sp"/>
+
+                <com.rechargeapp.customview.CustomEditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/et_round"
+                    android:hint="@string/pin"
+                    android:inputType="numberPassword"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:drawableEnd="@mipmap/pass_icon"
+                    android:textColor="@color/whiteHintColor"
+                    android:textColorHint="@color/whiteHintColor"
+                    android:textSize="@dimen/text_16sp" />
+
+                <com.rechargeapp.customview.CustomTextViewBold
+                    android:id="@+id/tvForgotPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/forgot_pin"
+                    android:textColor="@color/whiteColor"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_14sp" />
+
+                <com.rechargeapp.customview.CustomTextViewButton
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box_round"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="50dp"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/login"
+                    android:textAllCaps="true"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/button_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/uncheck_cell_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/uncheck_btn"/>
+
+                            <ImageView
+                                android:id="@+id/check_cell_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/check_btn"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+
+
+                        <com.rechargeapp.customview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/remember"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <com.rechargeapp.customview.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/login_remeber_me"
+                            android:layout_marginStart="5dp"
+                            android:textAllCaps="true"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/uncheck_pin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/uncheck_btn"/>
+
+                            <ImageView
+                                android:id="@+id/check_pin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/check_btn"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+
+                        <com.rechargeapp.customview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/remember"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <com.rechargeapp.customview.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pin"
+                            android:layout_marginStart="5dp"
+                            android:textAllCaps="true"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.rechargeapp.customview.CustomTextViewBold
+                    android:id="@+id/tvSocialSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/social_signin"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@color/whiteColor"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/google_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/login_google_plus_icon"/>
+
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@mipmap/login_facebook_icon"/>
+
+                    <ImageView
+                        android:id="@+id/twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@mipmap/login_twitter_icon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.rechargeapp.customview.CustomTextViewBold
+                android:id="@+id/tvCreateAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkBlue"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/create_acc"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/text_14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

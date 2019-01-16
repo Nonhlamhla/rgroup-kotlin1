@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loyality_background_box"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/loyalty_points_bg"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18sp" />
+
+                <com.rechargeapp.customview.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/loyalty_points_bg"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loyalty_points"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18sp" />
+
+                <com.rechargeapp.customview.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loyalty_points"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/loyalty_view_color"/>
+
+            <ImageView
+                android:id="@+id/close_loyalty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/close_icon_loyalty"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
+

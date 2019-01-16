@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_text_size">22sp</dimen>
+    <dimen name="button_text_size">22sp</dimen>
+    <dimen name="app_bar_height">40dp</dimen>
+    <dimen name="edittext_text_size">18sp</dimen>
+    <dimen name="text_8sp">9sp</dimen>
+    <dimen name="text_10sp">11sp</dimen>
+    <dimen name="text_12sp">13sp</dimen>
+    <dimen name="text_13sp">14sp</dimen>
+    <dimen name="text_14sp">15sp</dimen>
+    <dimen name="text_16sp">17sp</dimen>
+    <dimen name="text_17sp">18sp</dimen>
+    <dimen name="text_18sp">19sp</dimen>
+    <dimen name="text_20sp">21sp</dimen>
+    <dimen name="profile_image">50dp</dimen>
+    <dimen name="toggle_width">70dp</dimen>
+    <dimen name="toggle_height">35dp</dimen>
+</resources>

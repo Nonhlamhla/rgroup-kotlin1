@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/header_bg"
+                android:layout_centerInParent="true"/>
+
+            <com.rechargeapp.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/header_lotto_ticket"
+                android:textColor="@color/whiteColor"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="@dimen/text_12sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="120dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_lotto_tickets"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1" />
+
+            <com.rechargeapp.customview.CustomTextViewButton
+                android:id="@+id/buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box_round"
+                android:paddingBottom="10dp"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:paddingTop="10dp"
+                android:text="@string/buy"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/button_text_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/botm_logo"
+                   android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <ImageView
+                    android:id="@+id/lotto_ticket_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/plus_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/llFooter"
+                layout="@layout/layout_main_footer" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

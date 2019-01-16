@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/header_bg"
+                android:layout_centerInParent="true"/>
+
+            <com.rechargeapp.customview.CustomTextView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/airtime"
+                android:textColor="@color/yellow_color"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="@dimen/text_12sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="120dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivNetworkLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/net_logo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/lin_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_40sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_one"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/whiteColor"
+                        android:text="R2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_two"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/whiteColor"
+                        android:text="R5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_three"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:textColor="@color/whiteColor"
+                        android:textStyle="bold"
+                        android:text="R10"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_four"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/whiteColor"
+                        android:text="R15"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_five"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/whiteColor"
+                        android:text="R30"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_six"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/whiteColor"
+                        android:text="R60"/>
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/sms_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textColor="@color/whiteColor"
+                        android:text="SMS"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_seven"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_seven"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whiteColor"
+                        android:text="R180"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_eight"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:id="@+id/text_airtime_eight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whiteColor"
+                        android:text="R15"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_nine"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_nine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/whiteColor"
+                        android:text="R30"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_ten"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_ten"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/whiteColor"
+                        android:text="R60"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_eleveen"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextViewBold
+                        android:id="@+id/text_airtime_eleveen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whiteColor"
+                        android:text="R180"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/airtime_twelve"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/box_round"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:id="@+id/text_airtime_twelve"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whiteColor"
+                        android:text="R15"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

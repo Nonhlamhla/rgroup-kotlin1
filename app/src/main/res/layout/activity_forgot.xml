@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/back_ground_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/login_logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+
+            <com.rechargeapp.customview.CustomEditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_round"
+                android:hint="@string/cell_no"
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingBottom="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:drawableEnd="@mipmap/call_icon"
+                android:textColor="@color/whiteHintColor"
+                android:textColorHint="@color/whiteHintColor"
+                android:textSize="@dimen/text_16sp"/>
+
+            <com.rechargeapp.customview.CustomTextViewButton
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/box_round"
+                android:paddingBottom="10dp"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:paddingTop="10dp"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/button_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/botm_logo"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <include
+                android:id="@+id/llFooter"
+                layout="@layout/back_footer" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

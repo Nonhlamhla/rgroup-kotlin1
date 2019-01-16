@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground_color"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/header_bg"
+                    android:layout_centerInParent="true"/>
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:id="@+id/header_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/airtime"
+                    android:textColor="@color/whiteColor"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_12sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivNetworkLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/net_logo"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp">
+
+                <com.rechargeapp.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_amount"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/_12sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/back_circle">
+
+                        <com.rechargeapp.customview.CustomTextViewBold
+                            android:id="@+id/r_amount_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="R2"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/back_circle">
+
+                        <com.rechargeapp.customview.CustomTextViewBold
+                            android:id="@+id/r_amount_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="R10"
+                            android:gravity="center"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/back_circle">
+
+                        <com.rechargeapp.customview.CustomTextViewBold
+                            android:id="@+id/r_amount_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="R15"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/back_circle">
+
+                        <com.rechargeapp.customview.CustomTextViewBold
+                            android:id="@+id/r_amount_four"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="R30"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/r"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/_15sdp"/>
+
+                    <com.rechargeapp.customview.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/whiteColor"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:background="@null"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/whiteColor"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <com.rechargeapp.customview.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:hint="@string/enter_phone_number"
+                    android:textColorHint="@color/whiteColor"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/whiteColor"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:orientation="vertical"
+                    android:background="@drawable/box_round">
+
+                    <com.rechargeapp.customview.CustomTextView
+                        android:id="@+id/send_own_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/whiteColor"
+                        android:text="@string/send"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textSize="@dimen/_14sdp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</layout>
