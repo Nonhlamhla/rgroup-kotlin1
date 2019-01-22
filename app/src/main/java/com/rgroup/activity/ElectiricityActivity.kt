@@ -1,5 +1,6 @@
 package com.rgroup.activity
 
+import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import com.rgroup.R
@@ -27,66 +28,70 @@ class ElectiricityActivity : BaseActivity(){
     private fun setListenr() {
         // click on pay button
         tvPay.setOnClickListener {
+            startActivity(Intent(ctx, PaymetActivity::class.java))
+
             // hide the soft input keyboard
             hideSoftKeyboard()
             // call the validae method
-            validate()
+//            validate()
         }
     }
-
+    /***
+     * DISABLED THIS VALIDATION BECAUSE THERE IS NOTHING TO VALIDATE AS YET
+     */
     // check the field value and return the toast message
-    private fun validate(): Boolean {
-        //get the number value in enter by user and store in local variable
-        val number = etNumber.text.toString()
-        // get the eletricity value in enter by user and store in local variable
-        val electricity = etElectricity.text.toString().trim()
-        // get the amount value in enter by user and store in local variable
-        val amount = etAmount.text.toString()
-        return when {
-            //check the number is empty
-            number.isEmpty() -> {
-                // display the toast message
-                displayToast(resources.getString(R.string.number_error_msg))
-                // it's field is empty return the false
-                false
-            }
-            // check the number length is less than 8
-            number.length < 8 -> {
-                // display the toast message
-                displayToast(resources.getString(R.string.valid_mobile))
-                // it's field is less than to 8 then return the false
-                false
-            }
-            // check the electricity meter number is empty
-            electricity.isEmpty() -> {
-                // display the toast message
-                displayToast(resources.getString(R.string.electricity_meter_empty_msg))
-                // it's field is empty then return the false
-                false
-            }
-            // check the electricity meter nuber is less than 13
-            electricity.length < 13 -> {
-                // display the toast message
-                displayToast(resources.getString(R.string.electricity_meter_valid_msg))
-                // it's field is less than to 13 then return the false
-                false
-            }
-            // check amount field is empty
-            amount.isEmpty() -> {
-                // display the toast message
-                displayToast(resources.getString(R.string.amount_error_msg))
-                // it's field is empty then return the false
-                false
-            }
-            // check the amount is equal to dot
-            etAmount.text.toString() == "." -> {
-                // display the toast message
-                displayToast(resources.getString(R.string.amoutn_valid_msg))
-                // it's field is store the only dot then return the false
-                false
-            }
-            // all conditions are true then return true
-            else -> true
-        }
-    }
+//    private fun validate(): Boolean {
+//        //get the number value in enter by user and store in local variable
+//        val number = etNumber.text.toString()
+//        // get the eletricity value in enter by user and store in local variable
+//        val electricity = etElectricity.text.toString().trim()
+//        // get the amount value in enter by user and store in local variable
+//        val amount = etAmount.text.toString()
+//        return when {
+//            //check the number is empty
+//            number.isEmpty() -> {
+//                // display the toast message
+//                displayToast(resources.getString(R.string.number_error_msg))
+//                // it's field is empty return the false
+//                false
+//            }
+//            // check the number length is less than 8
+//            number.length < 8 -> {
+//                // display the toast message
+//                displayToast(resources.getString(R.string.valid_mobile))
+//                // it's field is less than to 8 then return the false
+//                false
+//            }
+//            // check the electricity meter number is empty
+//            electricity.isEmpty() -> {
+//                // display the toast message
+//                displayToast(resources.getString(R.string.electricity_meter_empty_msg))
+//                // it's field is empty then return the false
+//                false
+//            }
+//            // check the electricity meter nuber is less than 13
+//            electricity.length < 13 -> {
+//                // display the toast message
+//                displayToast(resources.getString(R.string.electricity_meter_valid_msg))
+//                // it's field is less than to 13 then return the false
+//                false
+//            }
+//            // check amount field is empty
+//            amount.isEmpty() -> {
+//                // display the toast message
+//                displayToast(resources.getString(R.string.amount_error_msg))
+//                // it's field is empty then return the false
+//                false
+//            }
+//            // check the amount is equal to dot
+//            etAmount.text.toString() == "." -> {
+//                // display the toast message
+//                displayToast(resources.getString(R.string.amoutn_valid_msg))
+//                // it's field is store the only dot then return the false
+//                false
+//            }
+//            // all conditions are true then return true
+//            else -> true
+//        }
+//    }
 }

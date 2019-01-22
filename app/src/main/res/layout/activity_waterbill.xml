@@ -118,7 +118,7 @@
                         android:paddingStart="50dp"
                         android:paddingTop="10dp"
                         android:text="@string/pay"
-                        android:textAllCaps="true"
+                        android:textAllCaps="false"
                         android:textColor="@color/whiteColor"
                         android:textSize="@dimen/button_text_size" />
 

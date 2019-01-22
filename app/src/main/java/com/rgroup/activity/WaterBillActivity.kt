@@ -1,5 +1,6 @@
 package com.rgroup.activity
 
+import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import com.rgroup.R
@@ -24,42 +25,46 @@ class WaterBillActivity : BaseActivity(){
 
     private fun setListenr() {
         tvPay.setOnClickListener {
-            hideSoftKeyboard()
-            validate()
-        }
-    }
+            startActivity(Intent(ctx, PaymetActivity::class.java))
 
-    private fun validate() : Boolean {
-        val number = etNumber.text.toString()
-        val electricity = etElectricity.text.toString().trim()
-        val amount = etAmount.text.toString()
-        return when {
-            number.isEmpty() -> {
-                displayToast(resources.getString(R.string.number_error_msg))
-                false
-            }
-            number.length < 8 -> {
-                displayToast(resources.getString(R.string.valid_mobile))
-                false
-            }
-            electricity.isEmpty() -> {
-                displayToast(resources.getString(R.string.electricity_meter_empty_msg))
-                false
-            }
-            electricity.length < 13 -> {
-                displayToast(resources.getString(R.string.electricity_meter_valid_msg))
-                false
-            }
-            amount.isEmpty() -> {
-                displayToast(resources.getString(R.string.amount_error_msg))
-                false
-            }
-            etAmount.text.toString() == "." -> {
-                displayToast(resources.getString(R.string.amoutn_valid_msg))
-                false
-            }
-            else -> true
+            hideSoftKeyboard()
+//            validate()
         }
     }
+    /***
+     * DISABLED THIS VALIDATION BECAUSE THERE IS NOTHING TO VALIDATE AS YET
+     */
+//    private fun validate() : Boolean {
+//        val number = etNumber.text.toString()
+//        val electricity = etElectricity.text.toString().trim()
+//        val amount = etAmount.text.toString()
+//        return when {
+//            number.isEmpty() -> {
+//                displayToast(resources.getString(R.string.number_error_msg))
+//                false
+//            }
+//            number.length < 8 -> {
+//                displayToast(resources.getString(R.string.valid_mobile))
+//                false
+//            }
+//            electricity.isEmpty() -> {
+//                displayToast(resources.getString(R.string.electricity_meter_empty_msg))
+//                false
+//            }
+//            electricity.length < 13 -> {
+//                displayToast(resources.getString(R.string.electricity_meter_valid_msg))
+//                false
+//            }
+//            amount.isEmpty() -> {
+//                displayToast(resources.getString(R.string.amount_error_msg))
+//                false
+//            }
+//            etAmount.text.toString() == "." -> {
+//                displayToast(resources.getString(R.string.amoutn_valid_msg))
+//                false
+//            }
+//            else -> true
+//        }
+//    }
 
 }
